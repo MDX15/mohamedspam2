@@ -46,7 +46,7 @@ client.on('message', message => {
      
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'say')) {
+        if(message.content.startsWith(prefix + 'say1')) {
             message.channel.send(''+x);
                 message.delete(999)
         }
@@ -72,6 +72,25 @@ client2.on('message', message => {
     }
 });
 
+    client2.on('message', message => {
+        var prefix = "-";
+        if (message.author.bot) return;
+        if (!message.content.startsWith(prefix)) return;
+     
+        let command = message.content.split(" ")[0];
+        command = command.slice(prefix.length);
+     
+     
+      let args = message.content.split(" ").slice(1);
+      let x = args.join(" ")
+        if(message.content.startsWith(prefix + 'say2')) {
+            message.channel.send(''+x);
+                message.delete(999)
+        }
+       
+       
+      });
+
 client3.on('message', message => {
     if(message.content === '-راتب'){
         message.channel.send('#daily')
@@ -90,6 +109,25 @@ client3.on('message', message => {
     }
 });
 
+    client3.on('message', message => {
+        var prefix = "-";
+        if (message.author.bot) return;
+        if (!message.content.startsWith(prefix)) return;
+     
+        let command = message.content.split(" ")[0];
+        command = command.slice(prefix.length);
+     
+     
+      let args = message.content.split(" ").slice(1);
+      let x = args.join(" ")
+        if(message.content.startsWith(prefix + 'say3')) {
+            message.channel.send(''+x);
+                message.delete(999)
+        }
+       
+       
+      });
+
 client4.on('message', message => {
     if(message.content === '-راتب'){
         message.channel.send('#daily')
@@ -108,6 +146,24 @@ client4.on('message', message => {
     }
 });
 
+    client4.on('message', message => {
+        var prefix = "-";
+        if (message.author.bot) return;
+        if (!message.content.startsWith(prefix)) return;
+     
+        let command = message.content.split(" ")[0];
+        command = command.slice(prefix.length);
+     
+     
+      let args = message.content.split(" ").slice(1);
+      let x = args.join(" ")
+        if(message.content.startsWith(prefix + 'say4')) {
+            message.channel.send(''+x);
+                message.delete(999)
+        }
+       
+       
+      });
 
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
 if (message.content === '!spam') {
